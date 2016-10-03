@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'turlang'
+
+contents = File.read($1)
+inter = Turlang::Interpeter.interpet(contents)
+inter.run
