@@ -2,6 +2,6 @@
 
 require 'turlang'
 
-contents = File.read($1)
+contents = File.read(ARGV[0])
 inter = Turlang::Interpeter.interpet(contents)
 inter.run
