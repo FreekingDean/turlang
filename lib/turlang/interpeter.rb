@@ -7,6 +7,12 @@ module Turlang
       inter = Turlang::Interpeter.new
       program.split("\n").each do |line|
         next if line == ''
+        if line =~ /\A\[(.*)\]\Z/
+          line.strip!
+          inter.set_stack(line[1..-2].split(', '))
+          next
+        end
+
         if line =~ /\A\:(.*)\:\Z/
           line.strip!
           inter.new_label(line)
@@ -33,6 +39,10 @@ module Turlang
       @io = IO.new
       @current_label = nil
       @current_conditional = nil
+    end
+
+    def set_stack values
+      @stack.values = values.map{|v| v.to_sym}
     end
 
     def new_label label
