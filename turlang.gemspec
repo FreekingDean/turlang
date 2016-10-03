@@ -9,8 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dean"]
   spec.email         = ["deangalvin3@gmail.com"]
 
-  spec.summary       = %q{ Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{ Write a longer description or delete this line.}
+  spec.summary       = %q{Turlang is an interpeted language based off a turing machine.}
   spec.homepage      = "https://www.github.com/FreekingDean/turlang"
   spec.license       = "MIT"
 
