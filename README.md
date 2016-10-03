@@ -3,7 +3,7 @@ The language of the future
 
 ![turing-pic](http://www.worldofcomputing.net/wp-content/uploads/2013/01/turingMachine.gif)
 
-Turlang is in the most basic form a state machine language. It allows you to build
+Turlang is in the most basic form of a state machine language. It allows you to build
 a simple state machine super loosely based off a turing machine.
 
 ## Installing
